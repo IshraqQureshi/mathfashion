@@ -1,0 +1,65 @@
+2020-07-22T07:54:13+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in C:\xampp\htdocs\mathfashion\wp-content\themes\vw-ecommerce-store-child\functions.php on line 65
+
+2020-07-22T09:03:04+00:00 CRITICAL Cannot redeclare add_custom_styles() (previously declared in C:\xampp\htdocs\mathfashion\wp-content\plugins\custom-main-slider\main-slider.php:10) in C:\xampp\htdocs\mathfashion\wp-content\themes\vw-ecommerce-store-child\functions.php on line 16
+
+2020-07-22T09:04:54+00:00 CRITICAL Cannot redeclare add_custom_styles() (previously declared in C:\xampp\htdocs\mathfashion\wp-content\plugins\custom-main-slider\main-slider.php:10) in C:\xampp\htdocs\mathfashion\wp-content\themes\vw-ecommerce-store-child\functions.php on line 16
+
+2020-07-22T09:06:54+00:00 CRITICAL Cannot redeclare add_custom_styles() (previously declared in C:\xampp\htdocs\mathfashion\wp-content\plugins\custom-main-slider\main-slider.php:10) in C:\xampp\htdocs\mathfashion\wp-content\themes\vw-ecommerce-store-child\functions.php on line 16
+
+2020-07-22T09:07:27+00:00 CRITICAL Cannot redeclare add_custom_styles() (previously declared in C:\xampp\htdocs\mathfashion\wp-content\plugins\custom-main-slider\main-slider.php:10) in C:\xampp\htdocs\mathfashion\wp-content\themes\vw-ecommerce-store-child\functions.php on line 16
+
+2020-07-22T09:07:31+00:00 CRITICAL Cannot redeclare add_custom_styles() (previously declared in C:\xampp\htdocs\mathfashion\wp-content\plugins\custom-main-slider\main-slider.php:10) in C:\xampp\htdocs\mathfashion\wp-content\themes\vw-ecommerce-store-child\functions.php on line 16
+
+2020-07-22T09:07:42+00:00 CRITICAL Cannot redeclare add_custom_styles() (previously declared in C:\xampp\htdocs\mathfashion\wp-content\plugins\custom-main-slider\main-slider.php:10) in C:\xampp\htdocs\mathfashion\wp-content\themes\vw-ecommerce-store-child\functions.php on line 16
+
+2020-07-22T09:09:43+00:00 CRITICAL Cannot redeclare add_custom_styles() (previously declared in C:\xampp\htdocs\mathfashion\wp-content\plugins\custom-main-slider\main-slider.php:10) in C:\xampp\htdocs\mathfashion\wp-content\themes\vw-ecommerce-store-child\functions.php on line 16
+
+2020-07-22T09:11:44+00:00 CRITICAL Cannot redeclare add_custom_styles() (previously declared in C:\xampp\htdocs\mathfashion\wp-content\plugins\custom-main-slider\main-slider.php:10) in C:\xampp\htdocs\mathfashion\wp-content\themes\vw-ecommerce-store-child\functions.php on line 16
+
+2020-07-22T09:13:47+00:00 CRITICAL Cannot redeclare add_custom_styles() (previously declared in C:\xampp\htdocs\mathfashion\wp-content\plugins\custom-main-slider\main-slider.php:10) in C:\xampp\htdocs\mathfashion\wp-content\themes\vw-ecommerce-store-child\functions.php on line 16
+
+2020-07-22T09:15:48+00:00 CRITICAL Cannot redeclare add_custom_styles() (previously declared in C:\xampp\htdocs\mathfashion\wp-content\plugins\custom-main-slider\main-slider.php:10) in C:\xampp\htdocs\mathfashion\wp-content\themes\vw-ecommerce-store-child\functions.php on line 16
+
+2020-07-22T09:17:49+00:00 CRITICAL Cannot redeclare add_custom_styles() (previously declared in C:\xampp\htdocs\mathfashion\wp-content\plugins\custom-main-slider\main-slider.php:10) in C:\xampp\htdocs\mathfashion\wp-content\themes\vw-ecommerce-store-child\functions.php on line 16
+
+2020-07-22T09:19:50+00:00 CRITICAL Cannot redeclare add_custom_styles() (previously declared in C:\xampp\htdocs\mathfashion\wp-content\plugins\custom-main-slider\main-slider.php:10) in C:\xampp\htdocs\mathfashion\wp-content\themes\vw-ecommerce-store-child\functions.php on line 16
+
+2020-07-22T09:21:51+00:00 CRITICAL Cannot redeclare add_custom_styles() (previously declared in C:\xampp\htdocs\mathfashion\wp-content\plugins\custom-main-slider\main-slider.php:10) in C:\xampp\htdocs\mathfashion\wp-content\themes\vw-ecommerce-store-child\functions.php on line 16
+
+2020-07-22T10:11:55+00:00 CRITICAL Uncaught Error: Call to undefined function register_bottom_post_type() in C:\xampp\htdocs\mathfashion\wp-content\plugins\custom-main-slider\main-slider.php:62
+Stack trace:
+#0 C:\xampp\htdocs\mathfashion\wp-includes\class-wp-hook.php(287): custom_bottom_post_type('')
+#1 C:\xampp\htdocs\mathfashion\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\mathfashion\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\mathfashion\wp-settings.php(540): do_action('init')
+#4 C:\xampp\htdocs\mathfashion\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\mathfashion\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\mathfashion\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\mathfashion\wp-content\plugins\custom-main-slider\main-slider.php on line 62
+
+2020-07-22T10:11:58+00:00 CRITICAL Uncaught Error: Call to undefined function register_bottom_post_type() in C:\xampp\htdocs\mathfashion\wp-content\plugins\custom-main-slider\main-slider.php:62
+Stack trace:
+#0 C:\xampp\htdocs\mathfashion\wp-includes\class-wp-hook.php(287): custom_bottom_post_type('')
+#1 C:\xampp\htdocs\mathfashion\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\mathfashion\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\mathfashion\wp-settings.php(540): do_action('init')
+#4 C:\xampp\htdocs\mathfashion\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\mathfashion\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\mathfashion\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\mathfashion\wp-admin\about.php(10): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\mathfashion\wp-content\plugins\custom-main-slider\main-slider.php on line 62
+
+2020-07-22T10:12:10+00:00 CRITICAL Uncaught Error: Call to undefined function register_bottom_post_type() in C:\xampp\htdocs\mathfashion\wp-content\plugins\custom-main-slider\main-slider.php:62
+Stack trace:
+#0 C:\xampp\htdocs\mathfashion\wp-includes\class-wp-hook.php(287): custom_bottom_post_type('')
+#1 C:\xampp\htdocs\mathfashion\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\mathfashion\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\mathfashion\wp-settings.php(540): do_action('init')
+#4 C:\xampp\htdocs\mathfashion\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\mathfashion\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\mathfashion\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\mathfashion\wp-content\plugins\custom-main-slider\main-slider.php on line 62
+

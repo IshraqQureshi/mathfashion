@@ -1,3 +1,4 @@
+
 <?php
 
 function add_custom_styles(){
@@ -5,7 +6,10 @@ function add_custom_styles(){
     wp_enqueue_style('parent_style', get_template_directory_uri() . '/style.css');
 
     wp_enqueue_style('font-awesome', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+    wp_enqueue_style('slick_css', get_stylesheet_directory_uri() . '/includes/slick_slider/slick/slick-theme.css');
     wp_enqueue_style('slick_css', get_stylesheet_directory_uri() . '/includes/slick_slider/slick/slick.css');
+    
+
     wp_enqueue_script('slick_js', get_stylesheet_directory_uri() . '/includes/slick_slider/slick/slick.min.js');
     
     

@@ -1,6 +1,6 @@
 <?php
 
-// Plugin Name: Custom Main Slider
+// Plugin Name: Custom Bottom Slider
 // Description: Add Slides
 // Author: Ishraq Qureshi
 // Version: 1.0
@@ -11,7 +11,7 @@
 * Creating a function to create our CPT
 */
  
-function custom_post_type() {
+function custom_posts_type() {
  
         // Set UI labels for Custom Post Type
         $labels = array(
@@ -34,7 +34,7 @@ function custom_post_type() {
          
         $args = array(
             'label'               => __( 'slides', 'vw-ecommerce-store' ),
-            'description'         => __( 'Main Slider', 'vw-ecommerce-store' ),
+            'description'         => __( 'Bottom Slider', 'vw-ecommerce-store' ),
             'labels'              => $labels,
             // Features this CPT supports in Post Editor
             'supports'            => array( 'title' ),
@@ -59,7 +59,7 @@ function custom_post_type() {
         );
          
         // Registering your Custom Post Type
-        register_post_type( 'slides', $args );
+        register_posts_type( 'slides', $args );
      
     }
      
@@ -67,12 +67,12 @@ function custom_post_type() {
     * Containing our post type registration is not 
     * unnecessarily executed. 
     */
-    add_action( 'init', 'custom_post_type', 0 );
+    add_action( 'init', 'custom_posts_type', 0 );
      
 
-add_shortcode('main_slider', 'main_slider_shortcode');
+// add_shortcode('bottom_slider', 'bottom_slider_shortcode');
 
-function main_slider_shortcode(){
+function bottom_slider_shortcode(){
 
     $args = array(
         'post_type' => 'slides',
@@ -84,7 +84,7 @@ function main_slider_shortcode(){
 
     if( $query->have_posts() ):
         
-        $html = '<div class="main_slider_wrapper">';
+        $html = '<div class="bottom_slider_wrapper">';
 
         while( $query->have_posts() ): $query->the_post();
 
@@ -95,14 +95,14 @@ function main_slider_shortcode(){
             $button_url = get_field('button_url');
             $image_url = get_field('slider_image');
 
-            $html .= '<div class="main_slider-slide">';
-                $html .= '<div class="main_slider-slide_images">';
+            $html .= '<div class="bottom_slider-slide">';
+                $html .= '<div class="bottom_slider-slide_images">';
                     $html .= '<img src="'. $image_url .'" alt="'. get_the_title() .'">';
                 $html .= '</div>';
-                $html .= '<div class="main_slider-slide_content">';
-                    $html .= '<h3 class="main_slider-slide_content_sub_heading_1 heading h3">'. $sub_heading_1 .'</h3>';
-                    $html .= '<h2 class="main_slider-slide_content_main_heading heading h2">'. $main_heading .'</h2>';
-                    $html .= '<h3 class="main_slider-slide_content_sub_heading_2 heading h3 ">'. $sub_heading_2 .'</h3>';
+                $html .= '<div class="bottom_slider-slide_content">';
+                    $html .= '<h3 class="bottom_slider-slide_content_sub_heading_1 heading h3">'. $sub_heading_1 .'</h3>';
+                    $html .= '<h2 class="bottom_slider-slide_content_main_heading heading h2">'. $main_heading .'</h3>';
+                    $html .= '<h3 class="bottom_slider-slide_content_sub_heading_2 heading h3 ">'. $sub_heading_2 .'</h3>';
                     $html .= '<a class="btn" href="' . $button_url . '">'. $button_text .'</a>';
                 $html .= '</div>';
             $html .= '</div>';

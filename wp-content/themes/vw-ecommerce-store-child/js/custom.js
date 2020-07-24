@@ -5,6 +5,8 @@ jQuery(document).ready(function(){
         speed: 300,
         slidesToShow: 4,
         slidesToScroll: 4,
+        autoplay: true,
+        autoplaySpeed: 3000,
         responsive: [
           {
             breakpoint: 1024,
@@ -28,6 +30,8 @@ jQuery(document).ready(function(){
               slidesToShow: 1,
               slidesToScroll: 1
             }
+
+    
           }
           // You can unslick at a given breakpoint now by adding:
           // settings: "unslick"
@@ -35,4 +39,13 @@ jQuery(document).ready(function(){
         ]
       });
 
+
+    jQuery('.main_slider_wrapper').slick({
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+
+    });
+
+    
 })
